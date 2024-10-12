@@ -1,11 +1,12 @@
 # Importing required libs
-from keras.models import load_model
-from keras.utils import img_to_array
+# changed the import declaration
+from keras._tf_keras.keras.models import load_model
+from keras._tf_keras.keras.utils import img_to_array
 import numpy as np
 from PIL import Image
 
 # Loading model
-model = load_model("D:/SACHIN/Models/Hand-Sign-Digit-Language/digit_model.h5")
+model = load_model("digit_model.h5")
 
 
 # Preparing and pre-processing the image
